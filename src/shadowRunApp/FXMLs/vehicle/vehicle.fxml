@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.FXMLs.vehicle.VehicleController">
+   <children>
+      <Button fx:id="back" layoutX="29.0" layoutY="36.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="add" layoutX="734.0" layoutY="201.0" mnemonicParsing="false" onAction="#add" prefHeight="100.0" prefWidth="400.0" text="Add" />
+      <Button layoutX="734.0" layoutY="360.0" mnemonicParsing="false" onAction="#edit" prefHeight="75.0" prefWidth="190.0" text="Edit" />
+      <Button layoutX="944.0" layoutY="363.0" mnemonicParsing="false" onAction="#delete" prefHeight="75.0" prefWidth="190.0" text="Delete" />
+      <TableView fx:id="display" focusTraversable="false" layoutX="110.0" layoutY="53.0" prefHeight="621.0" prefWidth="593.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" editable="false" prefWidth="216.0" sortable="false" text="Name" />
+            <TableColumn fx:id="handColumn" editable="false" prefWidth="53.0" sortable="false" text="HND" />
+            <TableColumn fx:id="accelColumn" editable="false" prefWidth="53.0" sortable="false" text="ACCL" />
+            <TableColumn fx:id="speedColumn" editable="false" prefWidth="53.0" sortable="false" text="SPD" />
+            <TableColumn fx:id="pilotColumn" editable="false" prefWidth="53.0" sortable="false" text="PLT" />
+            <TableColumn fx:id="bodyColumn" editable="false" prefWidth="53.0" sortable="false" text="BOD" />
+            <TableColumn fx:id="armorColumn" editable="false" prefWidth="53.0" sortable="false" text="AMR" />
+            <TableColumn fx:id="sensorColumn" editable="false" prefWidth="53.0" sortable="false" text="SNSR" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

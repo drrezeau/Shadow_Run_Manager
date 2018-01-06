@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="880.0" prefWidth="1200.0" stylesheets="@../../Styles/myStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.MainMenuController">
+   <center>
+      <Pane prefHeight="819.0" prefWidth="1200.0" styleClass="pane" stylesheets="@../../Styles/myStyles.css" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="675.0" layoutY="65.0" prefHeight="562.0" prefWidth="428.0">
+               <children>
+                  <Button fx:id="qualities" onAction="#qualities" prefHeight="40.0" prefWidth="165.0" text="Qualities" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="skills" onAction="#skills" prefHeight="40.0" prefWidth="165.0" text="Skills" GridPane.columnIndex="1" />
+                  <Button fx:id="contacts" onAction="#contacts" prefHeight="40.0" prefWidth="165.0" text="Contacts" GridPane.rowIndex="2" />
+                  <Button fx:id="rWeapons" onAction="#rangedWeapons" prefHeight="40.0" prefWidth="165.0" text="Ranged Weapons" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="mWeapons" onAction="#meleeWeapons" prefHeight="40.0" prefWidth="165.0" text="Melee Weapons" GridPane.rowIndex="3" />
+                  <Button fx:id="armor" onAction="#armor" prefHeight="40.0" prefWidth="165.0" text="Armor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="gear" onAction="#gear" prefHeight="40.0" prefWidth="165.0" text="Gear" GridPane.rowIndex="5" />
+                  <Button fx:id="vehicle" onAction="#vehicle" prefHeight="40.0" prefWidth="165.0" text="Vehicle" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="spells" disable="true" onAction="#spells" prefHeight="40.0" prefWidth="165.0" text="Spells" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="attributes" onAction="#attributes" prefHeight="40.0" prefWidth="165.0" text="Attributes" />
+                  <Button fx:id="ids" onAction="#ids" prefHeight="40.0" prefWidth="165.0" text="IDs/Currency" GridPane.rowIndex="1" />
+                  <Button fx:id="cyberdeck" onAction="#cyberDeck" prefHeight="40.0" prefWidth="165.0" text="Cyberdeck" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="other" disable="true" onAction="#adept" prefHeight="40.0" prefWidth="165.0" text="Adept Powers" GridPane.rowIndex="6" />
+                  <Button fx:id="augmentations" onAction="#augmentations" prefHeight="40.0" prefWidth="165.0" text="Augmentations" GridPane.rowIndex="4" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <TextArea fx:id="characterDisplay" editable="false" layoutX="25.0" layoutY="65.0" prefHeight="703.0" prefWidth="573.0" wrapText="true" />
+            <Button fx:id="karma" layoutX="812.0" layoutY="636.0" mnemonicParsing="false" onAction="#changeKarma" prefHeight="39.0" prefWidth="154.0" text="Change Karma" />
+            <Button fx:id="loadMenu" layoutX="49.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadMenu" prefHeight="39.0" prefWidth="310.0" text="Back to Main Menu" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#savePdf" text="Save as PDF" />
+                  <MenuItem fx:id="saveDB" mnemonicParsing="false" onAction="#saveToDB" text="Save to Database" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveLocally" text="Save to Local" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

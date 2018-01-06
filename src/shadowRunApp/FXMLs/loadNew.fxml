@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.LoadNewController">
+   <children>
+      <Button fx:id="load" layoutX="261.0" layoutY="72.0" mnemonicParsing="false" onAction="#load" prefHeight="40.0" prefWidth="293.0" text="Load" />
+      <Button fx:id="newCharacter" layoutX="261.0" layoutY="145.0" mnemonicParsing="false" onAction="#newCharacter" prefHeight="40.0" prefWidth="293.0" text="New" />
+      <Button fx:id="delete" layoutX="261.0" layoutY="222.0" mnemonicParsing="false" onAction="#deleteCharacter" prefHeight="40.0" prefWidth="293.0" text="Delete" />
+      <Button fx:id="signOut" layoutX="261.0" layoutY="300.0" mnemonicParsing="false" onAction="#signOut" prefHeight="40.0" prefWidth="293.0" text="Sign Out" />
+      <ListView fx:id="list" layoutX="43.0" layoutY="16.0" prefHeight="358.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
